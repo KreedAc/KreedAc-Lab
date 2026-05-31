@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KreedAc Lab — Web Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Hanken+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#top" aria-label="KreedAc Lab">
+      <span class="brand__mark"><b>Kreed</b><span class="ac">Ac</span> Lab</span>
+      <span class="brand__tag">Web Studio</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work" data-i18n="nav.work">Lavori</a>
+      <a href="#services" data-i18n="nav.services">Servizi</a>
+      <a href="#approach" data-i18n="nav.approach">Approccio</a>
+      <a href="#contact" data-i18n="nav.contact">Contatti</a>
+    </nav>
+
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="it" class="is-active">IT</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <a href="#contact" class="btn-cta">
+        <span data-i18n="nav.cta">Lavoriamo insieme</span>
+        <span class="arrow">↗</span>
+      </a>
+      <button class="nav__menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero__eyebrow reveal">
+        <span class="dot"></span>
+        <span class="label" data-i18n="hero.eyebrow">Web studio — siti & web app</span>
+        <span class="rule"></span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="blk reveal" data-d="1"><span data-i18n="hero.t1">Noi ci</span> <span data-i18n="hero.t2">crediamo.</span></span>
+        <span class="blk reveal" data-d="2"><span class="it" data-i18n="hero.t3">Cridacci</span> <span data-i18n="hero.t4">pure tu.</span></span>
+      </h1>
+
+      <div class="hero__lead">
+        <p class="reveal" data-d="3" data-i18n="hero.lead">KreedAc Lab progetta e sviluppa siti vetrina e web app su misura per piccole attività e professionisti. Dal primo schizzo al pulsante che converte: costruiamo strumenti digitali in cui credere davvero.</p>
+
+        <div class="hero__meta reveal" data-d="4">
+          <div class="row"><span data-i18n="hero.m1k">Sede</span><span data-i18n="hero.m1v">Calabria, IT — da remoto</span></div>
+          <div class="row"><span data-i18n="hero.m2k">Cosa facciamo</span><span data-i18n="hero.m2v">Siti vetrina · Web app</span></div>
+          <div class="row"><span data-i18n="hero.m3k">Per chi</span><span data-i18n="hero.m3v">Attività locali · Freelance</span></div>
+          <div class="row"><span data-i18n="hero.m4k">Disponibilità</span><span data-i18n="hero.m4v">Aperti a nuovi progetti</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ MANIFESTO ============================ -->
+  <section id="approach" class="section section--sand">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <div>
+          <div class="section__num" data-i18n="creed.num">01 — Il credo</div>
+          <h2 class="section__title" data-i18n="creed.title">Tre cose in cui crediamo, ad ogni progetto.</h2>
+        </div>
+        <p class="section__aside" data-i18n="creed.aside">Non vendiamo template. Costruiamo presenze digitali pensate per durare e per lavorare.</p>
+      </div>
+
+      <div class="creed reveal" data-d="1">
+        <div class="creed__item">
+          <div class="creed__n" data-i18n="creed.1n">01</div>
+          <h3 class="creed__t" data-i18n="creed.1t">Su misura, davvero</h3>
+          <p class="creed__d" data-i18n="creed.1d">Niente soluzioni preconfezionate. Ogni interfaccia nasce dal tuo modo di lavorare e dai tuoi clienti.</p>
+        </div>
+        <div class="creed__item">
+          <div class="creed__n" data-i18n="creed.2n">02</div>
+          <h3 class="creed__t" data-i18n="creed.2t">Bello e funzionante</h3>
+          <p class="creed__d" data-i18n="creed.2d">L'estetica conta, ma deve convertire. Design pulito al servizio di prenotazioni, ordini e contatti.</p>
+        </div>
+        <div class="creed__item">
+          <div class="creed__n" data-i18n="creed.3n">03</div>
+          <h3 class="creed__t" data-i18n="creed.3t">Veloce e curato</h3>
+          <p class="creed__d" data-i18n="creed.3d">Codice leggero, caricamenti rapidi, attenzione ai dettagli. La cura si vede e si sente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SERVICES ============================ -->
+  <section id="services" class="section">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <div>
+          <div class="section__num" data-i18n="srv.num">02 — Servizi</div>
+          <h2 class="section__title" data-i18n="srv.title">Cosa costruiamo</h2>
+        </div>
+        <p class="section__aside" data-i18n="srv.aside">Due servizi, un solo standard: pensati per farti fare bella figura e farti risparmiare tempo.</p>
+      </div>
+
+      <div class="services">
+        <div class="service reveal">
+          <div class="service__lead">
+            <div class="service__num">01</div>
+            <h3 class="service__name"><span data-i18n="srv.1name1">Siti</span> <span class="it" data-i18n="srv.1name2">vetrina</span></h3>
+            <div class="service__price" data-i18n="srv.1price">da progetto</div>
+          </div>
+          <div class="service__detail">
+            <p class="service__desc" data-i18n="srv.1desc">La tua attività online, con stile. Pagine veloci, mobile-first, ottimizzate per farti trovare e contattare.</p>
+            <div class="service__tags">
+              <span data-i18n="srv.1t1">Landing page</span>
+              <span data-i18n="srv.1t2">Multi-pagina</span>
+              <span data-i18n="srv.1t3">SEO base</span>
+              <span data-i18n="srv.1t4">Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service reveal" data-d="1">
+          <div class="service__lead">
+            <div class="service__num">02</div>
+            <h3 class="service__name"><span data-i18n="srv.2name1">Web</span> <span class="it" data-i18n="srv.2name2">app</span></h3>
+            <div class="service__price" data-i18n="srv.2price">su preventivo</div>
+          </div>
+          <div class="service__detail">
+            <p class="service__desc" data-i18n="srv.2desc">Strumenti che lavorano per te: prenotazioni, menù digitali, gestionali. Lato cliente e lato admin, su misura.</p>
+            <div class="service__tags">
+              <span data-i18n="srv.2t1">Prenotazioni</span>
+              <span data-i18n="srv.2t2">Area admin</span>
+              <span data-i18n="srv.2t3">Carrello</span>
+              <span data-i18n="srv.2t4">Integrazioni</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WORK ============================ -->
+  <section id="work" class="section section--sand">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <div>
+          <div class="section__num" data-i18n="wrk.num">03 — Lavori selezionati</div>
+          <h2 class="section__title" data-i18n="wrk.title">Progetti in cui abbiamo creduto</h2>
+        </div>
+        <p class="section__aside" data-i18n="wrk.aside">Una selezione di prodotti reali, dal concept al rilascio.</p>
+      </div>
+
+      <div class="work">
+        <!-- Project 01 -->
+        <article class="project reveal">
+          <div class="project__media">
+            <a class="project__shot project__frame" href="https://hairstudiosbarbershop.com/" target="_blank" rel="noopener" aria-label="Hair Studios Barber Shop — sito live">
+              <span class="frame__bar"><span class="frame__dot"></span><span class="frame__dot"></span><span class="frame__dot"></span><span class="frame__url">hairstudiosbarbershop.com</span></span>
+              <span class="frame__body">
+                <span class="frame__mono">H</span>
+                <span class="frame__label">Booking live ↗</span>
+              </span>
+            </a>
+          </div>
+          <div class="project__body">
+            <div class="project__index" data-i18n="p1.index">Progetto 01</div>
+            <h3 class="project__name"><span data-i18n="p1.name1">Prenotazioni</span> <span class="it" data-i18n="p1.name2">senza attriti</span></h3>
+            <div class="project__kicker" data-i18n="p1.kicker">Hair studio · Barber shop</div>
+            <p class="project__desc" data-i18n="p1.desc">Una web app di booking per saloni e barber shop: il cliente sceglie servizio, orario e operatore in pochi tap; l'admin gestisce agenda, slot e disponibilità in tempo reale.</p>
+            <a class="project__visit" href="https://hairstudiosbarbershop.com/" target="_blank" rel="noopener"><span data-i18n="p1.visit">Visita il sito</span> <span class="arrow">↗</span></a>
+            <div class="project__meta">
+              <div class="r"><span data-i18n="p1.r1k">Ruolo</span><span data-i18n="p1.r1v">Design + Sviluppo</span></div>
+              <div class="r"><span data-i18n="p1.r2k">Ambiti</span><span data-i18n="p1.r2v">Lato cliente · Admin</span></div>
+              <div class="r"><span data-i18n="p1.r3k">Tipo</span><span data-i18n="p1.r3v">Web app prenotazioni</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="project project--alt reveal">
+          <div class="project__media">
+            <a class="project__shot project__frame" href="https://mayolamezia.netlify.app/" target="_blank" rel="noopener" aria-label="Mayo Smash Burger — sito live">
+              <span class="frame__bar"><span class="frame__dot"></span><span class="frame__dot"></span><span class="frame__dot"></span><span class="frame__url">mayolamezia.netlify.app</span></span>
+              <span class="frame__body">
+                <span class="frame__mono">M</span>
+                <span class="frame__label">Menù live ↗</span>
+              </span>
+            </a>
+          </div>
+          <div class="project__body">
+            <div class="project__index" data-i18n="p2.index">Progetto 02</div>
+            <h3 class="project__name"><span data-i18n="p2.name1">Dal menù al</span> <span class="it" data-i18n="p2.name2">WhatsApp</span></h3>
+            <div class="project__kicker" data-i18n="p2.kicker">Mayo · Smash burger</div>
+            <p class="project__desc" data-i18n="p2.desc">Pagina menù digitale per uno smash burger: il cliente compone l'ordine nel carrello e lo invia pronto su WhatsApp. Lato admin per gestire prodotti, prezzi e disponibilità in autonomia.</p>
+            <a class="project__visit" href="https://mayolamezia.netlify.app/" target="_blank" rel="noopener"><span data-i18n="p2.visit">Visita il sito</span> <span class="arrow">↗</span></a>
+            <div class="project__meta">
+              <div class="r"><span data-i18n="p2.r1k">Ruolo</span><span data-i18n="p2.r1v">Design + Sviluppo</span></div>
+              <div class="r"><span data-i18n="p2.r2k">Feature</span><span data-i18n="p2.r2v">Carrello → WhatsApp</span></div>
+              <div class="r"><span data-i18n="p2.r3k">Tipo</span><span data-i18n="p2.r3v">Menù + gestionale</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CONTACT ============================ -->
+  <section id="contact" class="section contact">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="section__num" data-i18n="cta.num" style="color: var(--accent)">04 — Parliamone</div>
+        <div class="label" style="margin-top:18px" data-i18n="cta.eyebrow">Pronto a partire?</div>
+        <h2 class="contact__big">
+          <span class="blk" data-i18n="cta.b1">Noi ci crediamo.</span>
+          <span class="blk it" data-i18n="cta.b2">Ora tocca a te.</span>
+        </h2>
+      </div>
+
+      <div class="contact__row reveal" data-d="1">
+        <a class="contact__mail" href="mailto:giovanni.avignone@gmail.com" data-i18n="cta.mail">giovanni.avignone@gmail.com</a>
+        <div class="contact__socials">
+          <a href="https://wa.me/393899275856" target="_blank" rel="noopener" data-i18n="cta.s1">WhatsApp</a>
+          <a href="https://www.linkedin.com/in/giovanni-avignone-5b00b0184" target="_blank" rel="noopener" data-i18n="cta.s2">LinkedIn</a>
+          <a href="mailto:giovanni.avignone@gmail.com" data-i18n="cta.s3">Email</a>
+        </div>
+      </div>
+
+      <div class="contact__call reveal" data-d="2">
+        <span class="label" data-i18n="cta.callk">Oppure chiamami</span>
+        <a href="tel:+393899275856">+39 389 927 5856</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span data-i18n="foot.rights">© 2026 KreedAc Lab — Tutti i diritti riservati</span>
+    <span data-i18n="foot.made">Fatto con cura, in Italia</span>
+  </div>
+</footer>
+
+<!-- ============================ SCRIPTS ============================ -->
+<script src="app.js"></script>
+
+</body>
+</html>
