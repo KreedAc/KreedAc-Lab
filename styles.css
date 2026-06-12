@@ -220,9 +220,41 @@ h1, h2, h3 { margin: 0; font-weight: 400; letter-spacing: -.01em; }
 .hero__meta .row span:last-child { font-weight: 500; font-size: 14.5px; text-align: right; }
 
 /* =========================================================================
+   TICKER
+   ========================================================================= */
+.ticker {
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  padding-block: 14px;
+  position: relative;
+  z-index: 2;
+}
+.ticker__track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: ticker 30s linear infinite;
+  will-change: transform;
+}
+.ticker__group {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  padding-right: 30px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.ticker__group i { font-style: normal; color: var(--accent); font-size: 10px; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker__track { animation: none; } }
+
+/* =========================================================================
    SECTION SCAFFOLD
    ========================================================================= */
 section { position: relative; z-index: 2; }
+section[id] { scroll-margin-top: 90px; }
 .section { padding-block: clamp(64px, 10vw, 140px); }
 .section--sand { background: var(--paper-deep); }
 .section__head {
@@ -248,9 +280,11 @@ section { position: relative; z-index: 2; }
    MANIFESTO
    ========================================================================= */
 .creed { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border-block: 1px solid var(--line); }
-.creed__item { background: var(--paper); padding: clamp(28px, 3vw, 44px) clamp(24px, 2.4vw, 36px); }
+.creed__item { background: var(--paper); padding: clamp(28px, 3vw, 44px) clamp(24px, 2.4vw, 36px); transition: background .35s var(--ease); }
+.creed__item:hover { background: var(--card); }
 .section--sand .creed { background: var(--line-soft); border-color: var(--line-soft); }
 .section--sand .creed__item { background: var(--paper-deep); }
+.section--sand .creed__item:hover { background: var(--card); }
 .creed__n { font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: .12em; }
 .creed__t { font-family: var(--display-family); font-size: clamp(22px, 2.2vw, 30px); margin: 18px 0 12px; line-height: 1.08; letter-spacing: -.01em; }
 .creed__t .it { font-style: italic; }
@@ -352,7 +386,22 @@ section { position: relative; z-index: 2; }
 /* =========================================================================
    CTA / CONTACT
    ========================================================================= */
-.contact { background: var(--ink); color: var(--paper); position: relative; z-index: 2; }
+.contact { background: var(--ink); color: var(--paper); position: relative; z-index: 2; overflow: hidden; }
+.contact::before {
+  content: "KreedAc";
+  position: absolute;
+  right: -.06em;
+  bottom: -.28em;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(160px, 28vw, 380px);
+  line-height: 1;
+  letter-spacing: -.04em;
+  color: color-mix(in srgb, var(--paper) 5%, transparent);
+  pointer-events: none;
+  user-select: none;
+}
+.contact .wrap { position: relative; }
 .contact .label { color: color-mix(in srgb, var(--paper) 55%, transparent); }
 .contact__big {
   font-family: var(--display-family);
@@ -453,6 +502,9 @@ section { position: relative; z-index: 2; }
   background: color-mix(in srgb, var(--paper) 60%, var(--card));
 }
 .frame__dot { width: 9px; height: 9px; border-radius: 50%; background: var(--line); }
+.frame__dot:nth-child(1) { background: #C97B66; }
+.frame__dot:nth-child(2) { background: #D9B36A; }
+.frame__dot:nth-child(3) { background: #9BA77E; }
 .frame__url {
   margin-left: 12px; font-family: var(--mono); font-size: 12px;
   color: var(--muted); letter-spacing: .02em;

@@ -26,6 +26,13 @@ const I18N = {
     "hero.m4k": "Disponibilità",
     "hero.m4v": "Aperti a nuovi progetti",
 
+    "tick.1": "Siti vetrina",
+    "tick.2": "Web app",
+    "tick.3": "Design",
+    "tick.4": "Sviluppo",
+    "tick.5": "SEO",
+    "tick.6": "Performance",
+
     "creed.num": "01 — Il credo",
     "creed.title": "Tre cose in cui crediamo, ad ogni progetto.",
     "creed.aside": "Non vendiamo template. Costruiamo presenze digitali pensate per durare e per lavorare.",
@@ -109,6 +116,13 @@ const I18N = {
     "hero.m3v": "Local businesses · Freelancers",
     "hero.m4k": "Availability",
     "hero.m4v": "Open to new projects",
+
+    "tick.1": "Showcase sites",
+    "tick.2": "Web apps",
+    "tick.3": "Design",
+    "tick.4": "Development",
+    "tick.5": "SEO",
+    "tick.6": "Performance",
 
     "creed.num": "01 — The creed",
     "creed.title": "Three things we believe, on every project.",
