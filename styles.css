@@ -340,7 +340,7 @@ section[id] { scroll-margin-top: 90px; }
    WORK
    ========================================================================= */
 .work { display: grid; gap: clamp(56px, 8vw, 120px); }
-.project { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: clamp(16px, 2.4vw, 36px); row-gap: 28px; align-items: center; }
+.project { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: clamp(16px, 2.4vw, 36px); row-gap: 28px; align-items: center; min-width: 0; }
 .project--alt .project__media { order: 2; }
 .project__media { grid-column: span 7; }
 .project--alt .project__media { grid-column: 6 / span 7; }
@@ -472,7 +472,8 @@ section[id] { scroll-margin-top: 90px; }
   .project__media, .project__body { grid-column: auto; }
   .project__body { margin-top: 26px; }
 }
-@media (max-width: 720px) {
+/* nav collapses before the links + CTA outgrow the bar */
+@media (max-width: 900px) {
   .nav__links { display: none; }
   .nav__links.open {
     display: flex; flex-direction: column; align-items: flex-start; gap: 20px;
@@ -483,7 +484,13 @@ section[id] { scroll-margin-top: 90px; }
   .nav__menu-btn { display: inline-flex; flex-direction: column; gap: 4px; padding: 8px; }
   .nav__menu-btn span { width: 22px; height: 1.6px; background: var(--ink); display: block; transition: transform .3s; }
   .btn-cta { display: none; }
+}
+@media (max-width: 720px) {
   .hero__meta .row span:last-child { font-size: 13px; }
+}
+/* very narrow phones: drop the brand tagline so the bar still fits */
+@media (max-width: 380px) {
+  .brand__tag { display: none; }
 }
 
 
@@ -521,4 +528,16 @@ section[id] { scroll-margin-top: 90px; }
 .frame__label {
   font-family: var(--mono); font-size: 11px; letter-spacing: .14em;
   text-transform: uppercase; color: var(--muted);
+}
+
+/* real screenshot inside the frame */
+.frame__shot {
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  object-fit: cover;
+  object-position: top center;
+  background: var(--card);
 }

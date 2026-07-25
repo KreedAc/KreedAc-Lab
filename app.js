@@ -82,6 +82,15 @@ const I18N = {
     "p2.slot": "Trascina qui uno screenshot del menù",
     "p2.visit": "Visita il sito",
 
+    "p3.index": "Progetto 03",
+    "p3.kicker": "Il Punto Antenna · Lamezia Terme",
+    "p3.name1": "Trovati", "p3.name2": "su Google",
+    "p3.desc": "Sito vetrina di sette pagine per un'attività storica di elettronica: una landing per ogni servizio, costruita attorno alla ricerca locale. HTML e CSS puri, zero JavaScript, dati strutturati e scheda Google collegata.",
+    "p3.r1k": "Ruolo", "p3.r1v": "Design + Sviluppo",
+    "p3.r2k": "Focus", "p3.r2v": "SEO locale",
+    "p3.r3k": "Tipo", "p3.r3v": "Vetrina 7 pagine",
+    "p3.visit": "Visita il sito",
+
     "cta.num": "04 — Parliamone",
     "cta.eyebrow": "Pronto a partire?",
     "cta.b1": "Noi ci crediamo.",
@@ -172,6 +181,15 @@ const I18N = {
     "p2.r3k": "Type", "p2.r3v": "Menu + dashboard",
     "p2.slot": "Drag a screenshot of the menu here",
     "p2.visit": "Visit the site",
+
+    "p3.index": "Project 03",
+    "p3.kicker": "Il Punto Antenna · Lamezia Terme",
+    "p3.name1": "Found on", "p3.name2": "Google",
+    "p3.desc": "A seven-page showcase site for a long-standing electronics shop: one landing per service, built around local search. Pure HTML and CSS, zero JavaScript, structured data and a linked Google Business profile.",
+    "p3.r1k": "Role", "p3.r1v": "Design + Development",
+    "p3.r2k": "Focus", "p3.r2v": "Local SEO",
+    "p3.r3k": "Type", "p3.r3v": "7-page showcase",
+    "p3.visit": "Visit the site",
 
     "cta.num": "04 — Let's talk",
     "cta.eyebrow": "Ready to start?",
