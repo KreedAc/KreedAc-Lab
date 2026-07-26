@@ -530,6 +530,38 @@ section[id] { scroll-margin-top: 90px; }
   text-transform: uppercase; color: var(--muted);
 }
 
+/* =========================================================================
+   PHONE ROW (app project — shows the flow, not a single screen)
+   ========================================================================= */
+.project__phones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(8px, 1.5vw, 22px);
+  padding: clamp(14px, 2.4vw, 32px);
+  background: radial-gradient(120% 120% at 50% 25%, color-mix(in srgb, var(--accent) 9%, var(--card)), var(--card) 72%);
+  transition: box-shadow .4s var(--ease), transform .4s var(--ease);
+}
+.project__phones:hover { transform: translateY(-4px); box-shadow: 0 40px 70px -42px rgba(40,30,16,.6); }
+.project__phones img {
+  height: 100%;
+  width: auto;
+  min-width: 0;
+  border-radius: clamp(7px, 1vw, 13px);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 32px -20px rgba(40, 30, 16, .6);
+  background: var(--card);
+  transition: transform .45s var(--ease);
+}
+/* gentle stagger: middle screen sits a touch higher */
+.project__phones img:nth-child(2) { transform: translateY(-9px); }
+.project__phones:hover img:nth-child(1) { transform: translateY(-5px); }
+.project__phones:hover img:nth-child(2) { transform: translateY(-14px); }
+.project__phones:hover img:nth-child(3) { transform: translateY(-5px); }
+@media (prefers-reduced-motion: reduce) {
+  .project__phones img, .project__phones { transition: none; }
+}
+
 /* real screenshot inside the frame */
 .frame__shot {
   flex: 1;
