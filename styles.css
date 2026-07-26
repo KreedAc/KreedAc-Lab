@@ -220,6 +220,33 @@ h1, h2, h3 { margin: 0; font-weight: 400; letter-spacing: -.01em; }
 .hero__meta .row span:last-child { font-weight: 500; font-size: 14.5px; text-align: right; }
 
 /* =========================================================================
+   STATS — verifiable proof, straight after the pitch
+   ========================================================================= */
+.stats { border-top: 1px solid var(--line); padding-block: clamp(30px, 4vw, 52px); }
+.stats__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(20px, 3vw, 48px); }
+.stat__n {
+  font-family: var(--display-family);
+  font-size: clamp(38px, 5.2vw, 72px);
+  line-height: 1;
+  letter-spacing: -.03em;
+}
+.stat__n .star { color: var(--accent); }
+.stat__l {
+  margin-top: 12px;
+  font-family: var(--mono); font-size: 11.5px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--muted);
+  max-width: 24ch; line-height: 1.5;
+}
+/* narrow screens: read as rows, like the hero meta */
+@media (max-width: 720px) {
+  .stats__grid { grid-template-columns: 1fr; gap: 0; }
+  .stat { display: flex; align-items: baseline; gap: 16px; padding-block: 15px; border-top: 1px solid var(--line-soft); }
+  .stat:first-child { border-top: 0; padding-top: 0; }
+  .stat__n { font-size: 32px; min-width: 3ch; }
+  .stat__l { margin-top: 0; font-size: 11px; max-width: none; }
+}
+
+/* =========================================================================
    TICKER
    ========================================================================= */
 .ticker {
@@ -294,47 +321,41 @@ section[id] { scroll-margin-top: 90px; }
    SERVICES
    ========================================================================= */
 .services { display: grid; }
+/* one compact row per service: name · what it is · price */
 .service {
   display: grid;
-  grid-template-columns: minmax(240px, 0.85fr) minmax(0, 1.15fr);
-  align-items: start;
-  gap: clamp(24px, 5vw, 88px);
-  padding-block: clamp(36px, 4vw, 60px);
+  grid-template-columns: minmax(190px, .85fr) minmax(0, 1.5fr) auto;
+  align-items: center;
+  gap: clamp(18px, 3.4vw, 56px);
+  padding-block: clamp(26px, 3vw, 42px);
   border-top: 1px solid var(--line);
   transition: padding-left .4s var(--ease);
 }
 .services .service:last-child { border-bottom: 1px solid var(--line); }
 .service:hover { padding-left: 10px; }
 
-/* left column: number · name · price, stacked */
 .service__lead { display: flex; flex-direction: column; }
 .service__num {
   font-family: var(--mono); font-size: 12px; color: var(--accent);
-  letter-spacing: .14em; margin-bottom: clamp(16px, 1.6vw, 22px);
+  letter-spacing: .14em; margin-bottom: 10px;
 }
 .service__name {
   font-family: var(--display-family);
-  font-size: clamp(30px, 3.6vw, 48px);
+  font-size: clamp(26px, 3vw, 40px);
   line-height: .98; letter-spacing: -.02em;
 }
 .service__name .it { font-style: italic; color: var(--accent); }
+.service__desc {
+  margin: 0; color: var(--ink-2);
+  font-size: 16px; line-height: 1.55; max-width: 48ch;
+}
 .service__price {
   display: inline-flex; align-items: center; gap: 10px;
-  margin-top: clamp(18px, 2vw, 26px);
+  margin: 0; white-space: nowrap;
   font-family: var(--mono); font-size: 11.5px; letter-spacing: .1em;
   text-transform: uppercase; color: var(--muted);
 }
 .service__price::before { content: ""; width: 22px; height: 1px; background: var(--accent); }
-
-/* right column: description + tags */
-.service__detail { padding-top: 4px; }
-.service__desc { color: var(--ink-2); font-size: 16.5px; line-height: 1.62; max-width: 46ch; }
-.service__tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: clamp(20px, 2.2vw, 28px); }
-.service__tags span {
-  font-family: var(--mono); font-size: 11px; letter-spacing: .05em;
-  padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink-2);
-  background: color-mix(in srgb, var(--card) 60%, transparent);
-}
 
 /* =========================================================================
    WORK
@@ -466,8 +487,7 @@ section[id] { scroll-margin-top: 90px; }
 @media (max-width: 940px) {
   .hero__lead { grid-template-columns: 1fr; gap: 36px; }
   .creed { grid-template-columns: 1fr; }
-  .service { grid-template-columns: 1fr; gap: 22px; }
-  .service__detail { padding-top: 0; }
+  .service { grid-template-columns: 1fr; gap: 14px; align-items: start; }
   .project, .project--alt .project__media, .project--alt .project__body { display: block; }
   .project__media, .project__body { grid-column: auto; }
   .project__body { margin-top: 26px; }
