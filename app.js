@@ -9,31 +9,28 @@ const I18N = {
     "nav.services": "Servizi",
     "nav.contact": "Contatti",
     "nav.cta": "Lavoriamo insieme",
+    "nav.wa": "WhatsApp",
 
-    "hero.eyebrow": "Web studio — siti & web app",
-    "hero.t1": "Noi ci",
-    "hero.t2": "crediamo.",
+    "hero.eyebrow": "Giovanni Avignone — sviluppatore web e app",
+    "hero.t1": "Io ci",
+    "hero.t2": "credo.",
     "hero.t3": "Cridacci",
     "hero.t4": "pure tu.",
     "hero.lead": "Siti vetrina e web app su misura per piccole attività e professionisti. Dal primo schizzo al pulsante che converte.",
+    "hero.cta1": "Scrivimi su WhatsApp",
+    "hero.cta2": "Vedi i lavori",
     "hero.m1k": "Sede",
     "hero.m1v": "Calabria, IT — da remoto",
-    "hero.m2k": "Cosa facciamo",
+    "hero.m2k": "Cosa faccio",
     "hero.m2v": "Siti vetrina · Web app · App mobile",
     "hero.m3k": "Per chi",
     "hero.m3v": "Attività locali · Freelance",
     "hero.m4k": "Disponibilità",
-    "hero.m4v": "Aperti a nuovi progetti",
+    "hero.m4v": "Disponibile per nuovi progetti",
 
-    "tick.1": "Siti vetrina",
-    "tick.2": "Web app",
-    "tick.3": "Design",
-    "tick.4": "Sviluppo",
-    "tick.5": "SEO",
-    "tick.6": "Performance",
 
-    "srv.num": "01 — Servizi",
-    "srv.title": "Cosa costruiamo",
+    "srv.num": "02 — Servizi",
+    "srv.title": "Cosa costruisco",
     "srv.aside": "Tre servizi, un solo standard: pensati per farti fare bella figura e farti risparmiare tempo.",
     "srv.1name1": "Siti", "srv.1name2": "vetrina",
     "srv.1desc": "La tua attività online, con stile. Pagine veloci, mobile-first, ottimizzate per farti trovare e contattare.",
@@ -45,13 +42,9 @@ const I18N = {
     "srv.3desc": "La tua attività nella tasca dei clienti: app pubblicate su App Store e Play Store, con notifiche push per conferme e promemoria.",
     "srv.3price": "su preventivo",
 
-    "stat.1": "Progetti in produzione",
-    "stat.2": "App store — iOS e Android",
-    "stat.3n": "4,9",
-    "stat.3": "105 recensioni Google del cliente",
 
-    "wrk.num": "02 — Lavori selezionati",
-    "wrk.title": "Progetti in cui abbiamo creduto",
+    "wrk.num": "01 — Lavori selezionati",
+    "wrk.title": "Progetti in cui ho creduto",
     "wrk.aside": "Una selezione di prodotti reali, dal concept al rilascio.",
 
     "p1.index": "Progetto 01",
@@ -79,19 +72,19 @@ const I18N = {
     "p3.r1k": "Ruolo", "p3.r1v": "Design + Sviluppo",
     "p3.r2k": "Focus", "p3.r2v": "SEO locale",
     "p3.r3k": "Tipo", "p3.r3v": "Vetrina 7 pagine",
+    "p3.r4k": "Scheda Google", "p3.r4v": "4,9 ★ · 105 recensioni",
     "p3.visit": "Visita il sito",
 
     "cta.num": "03 — Parliamone",
     "cta.eyebrow": "Pronto a partire?",
-    "cta.b1": "Noi ci crediamo.",
+    "cta.b1": "Io ci credo.",
     "cta.b2": "Ora tocca a te.",
     "cta.mail": "giovanni.avignone@gmail.com",
     "cta.callk": "Oppure chiamami",
-    "cta.s1": "WhatsApp",
+    "cta.s1": "Scrivimi su WhatsApp",
     "cta.s2": "LinkedIn",
-    "cta.s3": "Email",
 
-    "foot.rights": "© 2026 KreedAc Lab — Avignone Giovanni",
+    "foot.rights": "© 2026 Giovanni Avignone — KreedAc Lab",
     "foot.made": "Fatto con cura, in Calabria",
   },
   en: {
@@ -99,31 +92,28 @@ const I18N = {
     "nav.services": "Services",
     "nav.contact": "Contact",
     "nav.cta": "Let's work together",
+    "nav.wa": "WhatsApp",
 
-    "hero.eyebrow": "Web studio — sites & web apps",
-    "hero.t1": "We",
+    "hero.eyebrow": "Giovanni Avignone — web and app developer",
+    "hero.t1": "I",
     "hero.t2": "believe.",
     "hero.t3": "So will",
     "hero.t4": "you.",
     "hero.lead": "Bespoke sites and web apps for small businesses and professionals. From first sketch to the button that converts.",
+    "hero.cta1": "Message me on WhatsApp",
+    "hero.cta2": "See the work",
     "hero.m1k": "Based",
     "hero.m1v": "Calabria, IT — remote",
-    "hero.m2k": "What we do",
+    "hero.m2k": "What I do",
     "hero.m2v": "Showcase sites · Web apps · Mobile apps",
     "hero.m3k": "For",
     "hero.m3v": "Local businesses · Freelancers",
     "hero.m4k": "Availability",
-    "hero.m4v": "Open to new projects",
+    "hero.m4v": "Available for new projects",
 
-    "tick.1": "Showcase sites",
-    "tick.2": "Web apps",
-    "tick.3": "Design",
-    "tick.4": "Development",
-    "tick.5": "SEO",
-    "tick.6": "Performance",
 
-    "srv.num": "01 — Services",
-    "srv.title": "What we build",
+    "srv.num": "02 — Services",
+    "srv.title": "What I build",
     "srv.aside": "Three services, one standard: built to make you look good and save you time.",
     "srv.1name1": "Showcase", "srv.1name2": "sites",
     "srv.1desc": "Your business online, with style. Fast, mobile-first pages, optimized to be found and contacted.",
@@ -135,13 +125,9 @@ const I18N = {
     "srv.3desc": "Your business in your customers' pocket: apps published on the App Store and Play Store, with push notifications for confirmations and reminders.",
     "srv.3price": "on quote",
 
-    "stat.1": "Projects in production",
-    "stat.2": "App stores — iOS and Android",
-    "stat.3n": "4.9",
-    "stat.3": "105 Google reviews for the client",
 
-    "wrk.num": "02 — Selected work",
-    "wrk.title": "Projects we believed in",
+    "wrk.num": "01 — Selected work",
+    "wrk.title": "Projects I believed in",
     "wrk.aside": "A selection of real products, from concept to release.",
 
     "p1.index": "Project 01",
@@ -169,19 +155,19 @@ const I18N = {
     "p3.r1k": "Role", "p3.r1v": "Design + Development",
     "p3.r2k": "Focus", "p3.r2v": "Local SEO",
     "p3.r3k": "Type", "p3.r3v": "7-page showcase",
+    "p3.r4k": "Google profile", "p3.r4v": "4.9 ★ · 105 reviews",
     "p3.visit": "Visit the site",
 
     "cta.num": "03 — Let's talk",
     "cta.eyebrow": "Ready to start?",
-    "cta.b1": "We believe.",
+    "cta.b1": "I believe.",
     "cta.b2": "Now it's your turn.",
     "cta.mail": "giovanni.avignone@gmail.com",
     "cta.callk": "Or call me",
-    "cta.s1": "WhatsApp",
+    "cta.s1": "Message me on WhatsApp",
     "cta.s2": "LinkedIn",
-    "cta.s3": "Email",
 
-    "foot.rights": "© 2026 KreedAc Lab — Avignone Giovanni",
+    "foot.rights": "© 2026 Giovanni Avignone — KreedAc Lab",
     "foot.made": "Made with care, in Calabria",
   }
 };
@@ -198,9 +184,11 @@ function applyLang(lang) {
     const key = el.getAttribute("data-i18n-ph");
     if (dict[key] != null) el.setAttribute("placeholder", dict[key]);
   });
-  document.querySelectorAll(".lang button").forEach((b) =>
-    b.classList.toggle("is-active", b.dataset.lang === lang)
-  );
+  document.querySelectorAll(".lang button").forEach((b) => {
+    const on = b.dataset.lang === lang;
+    b.classList.toggle("is-active", on);
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+  });
   try { localStorage.setItem("kreedac_lang", lang); } catch (e) {}
 }
 
@@ -241,10 +229,23 @@ function initNav() {
   const btn = document.querySelector(".nav__menu-btn");
   const links = document.querySelector(".nav__links");
   if (btn) {
-    btn.addEventListener("click", () => links.classList.toggle("open"));
+    const setOpen = (open) => {
+      links.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    };
+    btn.addEventListener("click", () => setOpen(!links.classList.contains("open")));
     links.querySelectorAll("a").forEach((a) =>
-      a.addEventListener("click", () => links.classList.remove("open"))
+      a.addEventListener("click", () => setOpen(false))
     );
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && links.classList.contains("open")) {
+        setOpen(false);
+        btn.focus();
+      }
+    });
+    document.addEventListener("click", (e) => {
+      if (links.classList.contains("open") && !links.contains(e.target) && !btn.contains(e.target)) setOpen(false);
+    });
   }
 }
 
