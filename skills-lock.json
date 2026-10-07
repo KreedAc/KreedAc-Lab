@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "emil-design-eng": {
+      "source": "emilkowalski/skill",
+      "sourceType": "github",
+      "skillPath": "skills/emil-design-eng/SKILL.md",
+      "computedHash": "77853cec799207f80868c611374c6ed5fdf34a55355c5ab544b59e791c63ad98"
+    },
+    "impeccable": {
+      "source": "pbakaus/impeccable",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/impeccable/SKILL.md",
+      "computedHash": "e4b2a6560a16720d406d2cc90a4f7aedcc380ebc92117a583e0a06d2c96ecf1a"
+    }
+  }
+}
